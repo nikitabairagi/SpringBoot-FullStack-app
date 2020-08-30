@@ -42,7 +42,7 @@ class CourseList extends React.Component{
         this.props.history.push(`/courses/${id}`);
     }
     addCourse(){
-        this.props.history.push(`/courses/-1`);
+        this.props.history.push("/courses/-1");
     }
     render(){
         return(
@@ -80,7 +80,7 @@ class CourseList extends React.Component{
                         </tbody>
                     </table>
                     <div className="row">
-                        <button className="btn btn-success" onClick={this.addCourse}>Add</button>
+                        <button className="btn btn-success" onClick={() => this.addCourse()}>Add</button>
                     </div>
                 </div>
             </div>
